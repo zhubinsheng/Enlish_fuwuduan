@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.system.mapper.WordMapper">
+<select id="selectPage" resultType="org.jeecg.modules.system.entity.Word">
+    select * from cetfour where classify=#{classify}
+</select>
+    <select id="selectClassify" resultType="org.jeecg.modules.system.entity.Word">
+        select classify from cetfour
+    </select>
+
+</mapper>
