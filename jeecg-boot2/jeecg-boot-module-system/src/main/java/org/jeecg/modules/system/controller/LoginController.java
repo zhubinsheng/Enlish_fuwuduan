@@ -20,6 +20,7 @@ import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.modules.shiro.vo.DefContants;
 import org.jeecg.modules.system.entity.SysUser;
 import org.jeecg.modules.system.model.SysLoginModel;
+import org.jeecg.modules.system.model.SysRegisterInfoModel;
 import org.jeecg.modules.system.model.SysRegisterModel;
 import org.jeecg.modules.system.service.ISysLogService;
 import org.jeecg.modules.system.service.ISysUserService;
@@ -190,8 +191,54 @@ public class LoginController {
 		result.success("登录成功");
 		return result;
 	}
-	
 
 
 
+	/**
+	 * 注册
+	 *
+	 */
+	@RequestMapping(value="registerInfo",method = RequestMethod.POST)
+	@ApiOperation("完善资料接口")
+	public Result<JSONObject> registerInfo(@RequestBody SysRegisterInfoModel registerModel){
+		Result<JSONObject> result = new Result<JSONObject>();
+		String classId = registerModel.getClassId();
+		String avatar = registerModel.getAvatar();
+		int sex = registerModel.getSex();
+		SysUser sysUser;
+		try {
+			sysUser=new SysUser();
+			sysUser.setClassId(classId);
+			sysUser.setAvatar(avatar);
+			sysUser.setSex(sex);
+
+				/*String salt = oConvertUtils.randomGen(8);
+				sysUser.setSalt(salt);
+				String userpassword = PasswordUtil.encrypt(username, password, salt);
+				sysUser.setPassword(userpassword);
+				String token = JwtUtil.sign(username, userpassword);
+				redisUtil.set(CommonConstant.PREFIX_USER_TOKEN + token, token);
+				//设置超时时间
+				redisUtil.expire(CommonConstant.PREFIX_USER_TOKEN + token, JwtUtil.EXPIRE_TIME/1000);
+				sysUser.setCreateTime(new Date());
+				sysUser.setStatus(1);
+				sysUser.setDelFlag("0");
+				System.out.println("---create_by---"+sysUser.getCreateBy());*/
+
+
+			sysUserService.save(sysUser);
+			JSONObject obj = new JSONObject();
+			//obj.put("token", token);
+			obj.put("userInfo", sysUser);
+			result.setResult(obj);
+			result.success("完善成功");
+			//sysBaseAPI.addLog("用户名: "+username+",注册成功！", CommonConstant.REGISTER_TYPE_1, null);
+			return result;
+
+		}catch (Exception e){
+			log.error(e.getMessage(), e);
+			result.error500("操作失败");
+		}
+		return result;
+	}
 }

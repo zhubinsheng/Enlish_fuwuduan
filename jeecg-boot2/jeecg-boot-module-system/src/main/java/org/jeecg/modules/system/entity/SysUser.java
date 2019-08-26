@@ -132,6 +132,12 @@ public class SysUser implements Serializable {
      */
     private Date updateTime;
 
+    /**
+     * 班级id
+     */
+    @Excel(name = "班级id", width = 15)
+    private String classId;
+
 
 
 }
