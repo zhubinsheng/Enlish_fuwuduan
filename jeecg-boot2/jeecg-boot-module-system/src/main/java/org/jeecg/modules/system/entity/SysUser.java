@@ -2,6 +2,7 @@ package org.jeecg.modules.system.entity;
 
 import java.util.Date;
 
+import io.swagger.annotations.ApiModelProperty;
 import org.jeecg.common.aspect.annotation.Dict;
 import org.jeecgframework.poi.excel.annotation.Excel;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -92,7 +93,11 @@ public class SysUser implements Serializable {
     @Excel(name = "电话", width = 15)
     private String phone;
 
-
+    /**class
+     * 班级 */
+    @Excel(name = "class", width = 15)
+    @ApiModelProperty(value = "class")
+    private String classs;
 
     /**
      * 状态(1：正常  2：冻结 ）

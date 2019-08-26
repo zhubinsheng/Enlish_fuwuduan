@@ -43,6 +43,9 @@ public class ShiroConfig {
 		// 拦截器/api/word
 		Map<String, String> filterChainDefinitionMap = new LinkedHashMap<String, String>();
 		// 配置不会被拦截的链接 顺序判断
+        filterChainDefinitionMap.put("/demo/sYSCLASS/queryByClasss", "anon");
+        filterChainDefinitionMap.put("/demo/sYSCLASS/list", "anon");
+		filterChainDefinitionMap.put("/demo/sYSCLASS/add", "anon");
 		filterChainDefinitionMap.put("/api/word", "anon"); // 单词排除
 		filterChainDefinitionMap.put("/api/classify", "anon"); //列表排除
 		filterChainDefinitionMap.put("/api/login", "anon"); //登录接口排除
