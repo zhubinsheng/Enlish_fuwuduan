@@ -136,7 +136,7 @@ public class SysUser implements Serializable {
      * 班级id
      */
     @Excel(name = "班级id", width = 15)
-    private String classId;
+    private String class_id;
 
 
 

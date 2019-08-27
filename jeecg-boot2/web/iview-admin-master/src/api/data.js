@@ -2,14 +2,14 @@ import axios from '@/libs/api.request'
 
 export const getTableData = () => {
   return axios.request({
-    url: 'http://localhost:8084/jeecg-boot/api/classify',
+    url: 'http://47.94.252.83:8082/jeecg-boot-module-system-2.0.1/lib/library/list',
     method: 'post'
   })
 }
 
 export const getWordTableData = () => {
   return axios.request({
-    url: 'http://localhost:8084/jeecg-boot/api/word',
+    url: 'http://47.94.252.83:8082/jeecg-boot-module-system-2.0.1/api/word',
     method: 'post'
   })
 }

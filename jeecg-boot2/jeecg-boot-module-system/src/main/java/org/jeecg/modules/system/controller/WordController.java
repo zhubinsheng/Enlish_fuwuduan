@@ -32,7 +32,7 @@ public class WordController {
     @ApiOperation("获取单词列表")
     public Result<IPage<Word>> queryPageList(Word word,
                                              @RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
-                                             @RequestParam(name="pageSize", defaultValue="10") Integer pageSize,
+                                             @RequestParam(name="pageSize", defaultValue="30") Integer pageSize,
                                              @RequestParam(name="classify",defaultValue = "gmat2500")String classify,
                                              HttpServletRequest req){
         Result<IPage<Word>> result = new Result<IPage<Word>>();

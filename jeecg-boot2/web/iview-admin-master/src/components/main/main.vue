@@ -109,8 +109,7 @@ export default {
       'closeTag'
     ]),
     ...mapActions([
-      'handleLogin',
-      'getUnreadMessageCount'
+      'handleLogin'
     ]),
     turnToPage (route) {
       let { name, params, query } = {}

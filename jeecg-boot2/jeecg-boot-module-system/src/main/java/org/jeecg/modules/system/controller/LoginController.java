@@ -208,7 +208,7 @@ public class LoginController {
 		SysUser sysUser;
 		try {
 			sysUser=new SysUser();
-			sysUser.setClassId(classId);
+			sysUser.setClass_id(classId);
 			sysUser.setAvatar(avatar);
 			sysUser.setSex(sex);
 

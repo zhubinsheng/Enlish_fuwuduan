@@ -18,8 +18,7 @@ export default {
   data () {
     return {
       columns: [
-        { title: '单词', key: 'word', sortable: true },
-        { title: '词义', key: 'meaning', editable: true },
+        { title: '大类别', key: 'library', editable: true },
         { title: '类别', key: 'classify', editable: true },
         { title: 'Create-Time', key: 'createTime' },
         {
@@ -61,7 +60,7 @@ export default {
   },
   mounted () {
     getTableData().then(res => {
-      this.tableData = res.data.result
+      this.tableData = res.data.result.records
     })
   }
 }
