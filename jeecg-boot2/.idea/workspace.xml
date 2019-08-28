@@ -61,7 +61,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="word_tables.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="word_tables.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/iview-admin-master/src/view/components/tables/word_tables.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="358">
@@ -73,10 +73,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ShiroConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/config/ShiroConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="510">
               <caret line="48" column="47" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="47" />
             </state>
           </provider>
@@ -86,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/web/iview-admin-master/src/api/data.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="1" />
+              <caret line="7" column="1" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -94,8 +103,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/iview-admin-master/src/mock/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            <state relative-caret-position="85">
+              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -106,7 +115,7 @@
       <file leaf-file-name="WordController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/WordController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="357">
               <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
               <folding>
                 <element signature="e#2456#2469#0" expanded="true" />
@@ -192,6 +201,7 @@
         <option value="$PROJECT_DIR$/web/iview-admin-master/src/router/routers.js" />
         <option value="$PROJECT_DIR$/web/iview-admin-master/src/api/data.js" />
         <option value="$PROJECT_DIR$/web/iview-admin-master/src/view/components/tables/word_tables.vue" />
+        <option value="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/Test.java" />
       </list>
     </option>
   </component>
@@ -229,8 +239,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,107 +282,12 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jeecg" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="iview-admin-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="iview-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="iview-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="iview-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="iview-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="iview-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="tables" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -395,6 +309,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.jeecg" />
       <recent name="org.jeecg.modules.system.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -516,11 +431,12 @@
       <workItem from="1566831641697" duration="198000" />
       <workItem from="1566832050638" duration="210000" />
       <workItem from="1566834200196" duration="2999000" />
+      <workItem from="1567009179353" duration="225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168176000" />
+    <option name="totallyTimeSpent" value="168401000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,13 +449,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.30635247" side_tool="true" weight="0.82194245" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.13006397" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info id="Capture Tool" order="4" />
-      <window_info anchor="bottom" id="TypeScript" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="6" weight="0.27760968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -547,29 +463,30 @@
       <window_info id="UI Designer" order="5" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5354201" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291367" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4989754" weight="0.23503809" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3291367" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69364756" weight="0.28291622" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69364756" weight="0.28291622" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3291367" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.27856365" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1913646" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.27856365" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1913646" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32784185" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4989754" weight="0.23503809" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.3294893" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Maven" order="3" weight="0.32991803" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32784185" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,13 +512,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/web/iview-admin-master/src/api/data.js</url>
           <line>3</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/web/iview-admin-master/src/api/data.js</url>
           <line>2</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
@@ -609,7 +524,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/resources/logback-spring.xml" />
     <entry file="das://71bf02c6-f3b2-48e2-a621-8270cc6650eb/schema/English/table/sys_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -763,17 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
-          <folding>
-            <element signature="e#3004#3020#0" expanded="true" />
-            <element signature="e#3195#3204#0" expanded="true" />
-            <element signature="e#4972#4989#0" expanded="true" />
-            <element signature="e#5947#5955#0" expanded="true" />
-            <element signature="e#6446#6455#0" expanded="true" />
-            <element signature="e#6889#6898#0" expanded="true" />
-            <element signature="e#7493#7502#0" expanded="true" />
-            <element signature="e#8242#8251#0" expanded="true" />
-            <element signature="e#9026#9039#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -866,10 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#Button#0;n#Card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#298#328#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -882,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/iview-admin-master/src/mock/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        <state relative-caret-position="85">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -892,7 +791,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/WordController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="357">
           <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
           <folding>
             <element signature="e#2456#2469#0" expanded="true" />
@@ -909,7 +808,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/config/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="510">
           <caret line="48" column="47" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="47" />
         </state>
       </provider>
@@ -917,7 +816,7 @@
     <entry file="file://$PROJECT_DIR$/web/iview-admin-master/src/api/data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="1" />
+          <caret line="7" column="1" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -928,6 +827,13 @@
           <folding>
             <element signature="e#298#328#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
         </state>
       </provider>
     </entry>
