@@ -1,11 +1,10 @@
 package org.jeecg.modules.system.controller;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.jeecg.common.api.vo.Result;
@@ -34,6 +33,10 @@ import com.alibaba.fastjson.JSON;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
+import static java.util.stream.Collectors.collectingAndThen;
+import static java.util.stream.Collectors.toCollection;
+
+
  /**
  * @Description: 类别表
  * @Author: jeecg-boot
@@ -59,18 +62,20 @@ public class LibraryController {
 	@AutoLog(value = "类别表-分页列表查询")
 	@ApiOperation(value="类别表-分页列表查询", notes="类别表-分页列表查询")
 	@RequestMapping(value = "/list")
-	public Result<IPage<Library>> queryPageList(Library library,
+	public Result<Map<String, List<Library>>> queryPageList(Library library,
 												@RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
-												@RequestParam(name="pageSize", defaultValue="10") Integer pageSize,
+												@RequestParam(name="pageSize", defaultValue="100") Integer pageSize,
 												HttpServletRequest req) {
-		Result<IPage<Library>> result = new Result<IPage<Library>>();
+		Result<Map<String, List<Library>>> result = new Result<Map<String, List<Library>>>();
 		QueryWrapper<Library> queryWrapper = QueryGenerator.initQueryWrapper(library, req.getParameterMap());
 		Page<Library> page = new Page<Library>(pageNo, pageSize);
 		IPage<Library> pageList = libraryService.page(page, queryWrapper);
+		Map<String, List<Library>> groupBy = pageList.getRecords().stream().collect(Collectors.groupingBy(Library::getLibrary));
 		result.setSuccess(true);
-		result.setResult(pageList);
+		result.setResult(groupBy);
 		return result;
 	}
+
 	
 	/**
 	  *   添加
