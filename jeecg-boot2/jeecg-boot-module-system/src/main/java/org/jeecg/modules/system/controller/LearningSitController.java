@@ -120,10 +120,11 @@ public class LearningSitController {
 								//Collection<SYSCLASS> sysclassCollection = new C
 								Collection<SYSCLASS> list2 = new ArrayList<>();
 								list2.addAll(employees2);
-
-								boolean ok2 = sYSCLASSService.updateById(employees2.get(0));
-
-								boolean ok =  sYSCLASSService.updateBatchById(list2);
+								for (SYSCLASS sysclass:employees2){
+									sYSCLASSService.updateById(sysclass);
+								}
+								//boolean ok2 = sYSCLASSService.updateById(employees2.get(0));
+								//boolean ok =  sYSCLASSService.updateBatchById(list2);
 							}
 
 				/*		}
