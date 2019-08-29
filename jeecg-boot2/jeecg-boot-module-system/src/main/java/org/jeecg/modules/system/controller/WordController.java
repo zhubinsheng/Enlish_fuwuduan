@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.jeecg.Test;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.util.RedisUtil;
 import org.jeecg.modules.system.entity.Word;
@@ -14,9 +15,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.*;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
+
+import static org.jeecg.Test.txt2String;
 
 @Slf4j
 @RestController
@@ -66,5 +73,87 @@ public class WordController {
         return result;
 
     }
+
+    /**
+     * 文件上传测试接口
+     * @return
+     */
+    @RequestMapping(value="/upload",method = RequestMethod.POST)
+    @ApiOperation("上传单词库")
+    public void uploadFileTest(@RequestParam("uploadFile") MultipartFile file) throws Exception{
+
+        File toFile = null;
+        if(file.equals("")||file.getSize()<=0){
+            file = null;
+        }else {
+            InputStream ins = null;
+            ins = file.getInputStream();
+            toFile = new File(file.getOriginalFilename());
+            inputStreamToFile(ins, toFile);
+            ins.close();
+        }
+
+
+        int write = 0;
+        StringBuilder result = new StringBuilder();
+        String classify = file.getOriginalFilename().substring(0,file.getOriginalFilename().indexOf("."));
+        try{
+            Map<String, String> map = new HashMap<String, String>();
+            FileInputStream fis = new FileInputStream(toFile);
+            InputStreamReader isr = new InputStreamReader(fis,"GBK");
+            BufferedReader br = new BufferedReader(isr);
+            String s = null;
+            while((s = br.readLine())!=null){
+                if (s.endsWith("丨")){
+                    s = s + "空字符串";
+                }
+                String[] content = s.split("丨");
+
+                if (content != null && content.length == 2) {
+                    System.out.println(content[0]);
+                    System.out.println(content[1]);
+                    map.put(content[0],content[1]);
+                }
+                if (content[0]==null||content[0].equals("")){
+                    content[0] = "空字符串";
+                }
+                if (content[1]==null){
+                    content[1] = "空字符串";
+                }
+                wordService.InsertWordPage(content[0],content[1], classify);
+
+
+                //write+= Test.JDBCAdd.Insert(content[0],content[1]);
+                //result.append(System.lineSeparator()+s);
+            }
+            br.close();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
+
+    public static void inputStreamToFile(InputStream ins, File file) {
+        try {
+            OutputStream os = new FileOutputStream(file);
+            int bytesRead = 0;
+            byte[] buffer = new byte[8192];
+            while ((bytesRead = ins.read(buffer, 0, 8192)) != -1) {
+                os.write(buffer, 0, bytesRead);
+            }
+            os.close();
+            ins.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+
+
+
+
 
 }

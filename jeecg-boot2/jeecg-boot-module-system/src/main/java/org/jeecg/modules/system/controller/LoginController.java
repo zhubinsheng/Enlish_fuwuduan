@@ -3,15 +3,18 @@ package org.jeecg.modules.system.controller;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.constant.CommonConstant;
 import org.jeecg.common.system.api.ISysBaseAPI;
+import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.system.util.JwtUtil;
 import org.jeecg.common.system.vo.LoginUser;
 import org.jeecg.common.util.PasswordUtil;
@@ -19,9 +22,11 @@ import org.jeecg.common.util.RedisUtil;
 import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.modules.shiro.vo.DefContants;
 import org.jeecg.modules.system.entity.SysUser;
+import org.jeecg.modules.system.model.LearningSit;
 import org.jeecg.modules.system.model.SysLoginModel;
 import org.jeecg.modules.system.model.SysRegisterInfoModel;
 import org.jeecg.modules.system.model.SysRegisterModel;
+import org.jeecg.modules.system.service.ILearningSitService;
 import org.jeecg.modules.system.service.ISysLogService;
 import org.jeecg.modules.system.service.ISysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,6 +53,8 @@ import lombok.extern.slf4j.Slf4j;
 public class LoginController {
 	@Autowired
 	private ISysUserService sysUserService;
+	@Autowired
+	private ILearningSitService learningSitService;
 	@Autowired
 	private ISysBaseAPI sysBaseAPI;
 	@Autowired
@@ -79,11 +86,16 @@ public class LoginController {
 			redisUtil.set(CommonConstant.PREFIX_USER_TOKEN + token, token);
 			 //设置超时时间
 			redisUtil.expire(CommonConstant.PREFIX_USER_TOKEN + token, JwtUtil.EXPIRE_TIME/1000);
-			
+
+			LearningSit learningSit = new LearningSit();
+			learningSit.setUserid(sysUser.getId());
+			QueryWrapper<LearningSit> queryWrapper = QueryGenerator.initQueryWrapper(learningSit, null);
+			List<LearningSit> employees = learningSitService.list(queryWrapper);
 
 			JSONObject obj = new JSONObject();
 			obj.put("token", token);
 			obj.put("userInfo", sysUser);
+			obj.put("learning",employees);
 			result.setResult(obj);
 			result.success("登录成功");
 			sysBaseAPI.addLog("用户名: "+username+",登录成功！", CommonConstant.LOG_TYPE_1, null);

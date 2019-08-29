@@ -15,7 +15,7 @@ public class Test {
 
     public static void main(String args[]) {
         File file = new File("D:\\english\\闪记词库\\高中词汇\\北师大高中必修1.txt");
-txt2String(file);
+        txt2String(file);
 
        /* String str = new String("Welcome|to|Runoob|123");
 

@@ -14,4 +14,6 @@ public interface WordMapper extends BaseMapper<Word> {
     IPage<Word> selectPage(Page page, @Param("classify")String classify);
     Set<String> selectClassify();
 
+    void InsertWordPage(@Param("word")String word, @Param("meaning")String meaning, @Param("classify")String classify);
+
 }

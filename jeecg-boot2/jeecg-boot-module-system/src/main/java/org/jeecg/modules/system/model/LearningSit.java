@@ -1,4 +1,4 @@
-package org.jeecg.modules.system.entity;
+package org.jeecg.modules.system.model;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -16,33 +16,36 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.jeecgframework.poi.excel.annotation.Excel;
 
 /**
- * @Description: 班级表
+ * @Description: 学习情况记录表
  * @Author: jeecg-boot
- * @Date:   2019-08-26
+ * @Date:   2019-08-29
  * @Version: V1.0
  */
 @Data
-@TableName("SYS_CLASS")
+@TableName("LEARNONG_SIT")
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ApiModel(value="SYS_CLASS对象", description="班级表")
-public class SYSCLASS {
+@ApiModel(value="LEARNONG_SIT对象", description="学习情况记录表")
+public class LearningSit {
     
-	/**class*/
-	@Excel(name = "class", width = 15)
-    @ApiModelProperty(value = "class")
-	private String classs;
-
 	/**user id*/
-	@ApiModelProperty(value = "userid")
+	//@TableId(type = IdType.UUID)
+    @ApiModelProperty(value = "userid")
 	private String userid;
 
+	/**classifyId*/
+	@Excel(name = "classifyId", width = 15)
+    @ApiModelProperty(value = "classifyId")
+	private String classifyId;
 
-	/**user id*/
+	/**count*/
+	@Excel(name = "count", width = 15)
+    @ApiModelProperty(value = "count")
+	private String count;
+
+
 	@TableId(type = IdType.UUID)
 	@ApiModelProperty(value = "uuid")
 	private String uuid;
 
-
-	private String allcount;
 }

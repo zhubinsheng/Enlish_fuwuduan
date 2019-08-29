@@ -38,4 +38,9 @@ public class WordServiceImpl extends ServiceImpl<WordMapper, Word> implements IW
         redisUtil.set("WordCache::selectClassify",result);
         return result;
     }
+
+    @Override
+    public void InsertWordPage(String word, String meaning, String classify) {
+        wordMapper.InsertWordPage(word,meaning,classify);
+    }
 }

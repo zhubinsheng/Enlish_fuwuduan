@@ -20,6 +20,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import lombok.extern.slf4j.Slf4j;
 
 import org.jeecg.modules.system.entity.SYSCLASS;
+import org.jeecg.modules.system.model.LearningSit;
 import org.jeecg.modules.system.service.ISYSCLASSService;
 import org.jeecgframework.poi.excel.ExcelImportUtil;
 import org.jeecgframework.poi.excel.def.NormalExcelConstants;
@@ -82,13 +83,28 @@ public class SYSCLASSController {
 	@AutoLog(value = "班级表-添加")
 	@ApiOperation(value="班级表-添加", notes="班级表-添加")
 	@PostMapping(value = "/add")
-	public Result<SYSCLASS> add(@RequestParam(name="classs") String classs) {
+	public Result<SYSCLASS> add(@RequestParam(name="classs") String classs,@RequestParam(name="userID") String userID) {
 		SYSCLASS sYSCLASS = new SYSCLASS();
 		sYSCLASS.setClasss(classs);
+		sYSCLASS.setUserid(userID);
+
+
+        QueryWrapper<SYSCLASS> queryWrapper = QueryGenerator.initQueryWrapper(sYSCLASS, null);
+        List<SYSCLASS> employees = sYSCLASSService.list(queryWrapper);
+
+        List<SYSCLASS> list = employees.stream()
+                .filter((SYSCLASS b) -> b.getClasss().equals(classs))
+                .collect(Collectors.toList());
+
 		Result<SYSCLASS> result = new Result<SYSCLASS>();
 		try {
-			sYSCLASSService.save(sYSCLASS);
-			result.success("添加成功！");
+		    if (list.size()!=0){
+                result.success("请勿重复添加");
+            }else {
+                sYSCLASSService.save(sYSCLASS);
+                result.success("添加成功！");
+            }
+
 		} catch (Exception e) {
 			log.error(e.getMessage(),e);
 			result.error500("操作失败");
@@ -106,7 +122,7 @@ public class SYSCLASSController {
 	@PutMapping(value = "/edit")
 	public Result<SYSCLASS> edit(@RequestBody SYSCLASS sYSCLASS) {
 		Result<SYSCLASS> result = new Result<SYSCLASS>();
-		SYSCLASS sYSCLASSEntity = sYSCLASSService.getById(sYSCLASS.getId());
+		SYSCLASS sYSCLASSEntity = sYSCLASSService.getById(sYSCLASS.getUserid());
 		if(sYSCLASSEntity==null) {
 			result.error500("未找到对应实体");
 		}else {

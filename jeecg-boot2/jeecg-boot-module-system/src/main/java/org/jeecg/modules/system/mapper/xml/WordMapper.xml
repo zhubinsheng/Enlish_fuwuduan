@@ -8,4 +8,8 @@
         select classify from cetfour
     </select>
 
+    <insert id="InsertWordPage">
+        insert into CETONE(word, meaning,classify) values(#{word},#{meaning},#{classify})
+    </insert>
+
 </mapper>
