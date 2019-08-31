@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.qiniu.util.Auth;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.jeecg.common.api.vo.Result;
@@ -81,6 +82,13 @@ public class LoginController {
 				result.error500("用户名或密码错误");
 				return result;
 			}
+			String accessKey = "mG1JR-ivqabWIl6-t-69ZpGz-Cg57hFttKijlyBG";
+			String secretKey = "Xvxt2TKg6vbcWsfr4IlHyU0eifSFIoOg5oMoWtJ9";
+			String bucket = "english";
+			Auth auth = Auth.create(accessKey, secretKey);
+			String upToken = auth.uploadToken(bucket);
+			//System.out.println(upToken);
+
 			//生成token
 			String token = JwtUtil.sign(username, syspassword);
 			redisUtil.set(CommonConstant.PREFIX_USER_TOKEN + token, token);
@@ -96,6 +104,7 @@ public class LoginController {
 			obj.put("token", token);
 			obj.put("userInfo", sysUser);
 			obj.put("learning",employees);
+			obj.put("upToken",upToken);
 			result.setResult(obj);
 			result.success("登录成功");
 			sysBaseAPI.addLog("用户名: "+username+",登录成功！", CommonConstant.LOG_TYPE_1, null);
@@ -221,7 +230,9 @@ public class LoginController {
 		try {
 			sysUser=new SysUser();
 			sysUser.setClass_id(classId);
-			sysUser.setAvatar(avatar);
+
+			//http://px32gts87.bkt.clouddn.com/FoT8zK_VViVINVMnK3KDF85Hxegt
+			sysUser.setAvatar("http://px32gts87.bkt.clouddn.com/"+avatar);
 			sysUser.setSex(sex);
 
 				/*String salt = oConvertUtils.randomGen(8);
@@ -238,7 +249,7 @@ public class LoginController {
 				System.out.println("---create_by---"+sysUser.getCreateBy());*/
 
 
-			sysUserService.save(sysUser);
+			sysUserService.updateById(sysUser);
 			JSONObject obj = new JSONObject();
 			//obj.put("token", token);
 			obj.put("userInfo", sysUser);

@@ -10,6 +10,10 @@
           <element id="archive" name="jeecg-boot-base-common-2.0.1.jar">
             <element id="module-output" name="jeecg-boot-base-common" />
           </element>
+          <element id="library" level="project" name="Maven: com.qiniu:qiniu-java-sdk:7.2.25" />
+          <element id="library" level="project" name="Maven: com.squareup.okhttp3:okhttp:3.14.2" />
+          <element id="library" level="project" name="Maven: com.squareup.okio:okio:1.17.2" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.5" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:2.1.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:2.1.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.1.3.RELEASE" />
