@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b44b4567-b853-4bc7-b1ab-31517ef638c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-09-10T095212.200.json" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/2019-09-10T095212.200.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/WordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/WordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/mapper/xml/WordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/mapper/xml/WordMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/model/SysRegisterInfoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/model/SysRegisterInfoModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jeecg-boot-module-system/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/人教版7年级上.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/人教版7年级下.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/人教版8年级上.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/仁爱版7年级下.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/六级单词2000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/冀教版7年级下.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/冀教版8年级上.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/四级单词4000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/外研社8年级上.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/牛津沪教7年级上.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/短语库.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/高中标准3500.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/jeecg-boot-module-system/target/" />
@@ -69,65 +73,7 @@
     </checked>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2844">
-              <caret line="237" column="34" selection-start-line="237" selection-start-column="34" selection-end-line="237" selection-end-column="34" />
-              <folding>
-                <element signature="e#7953#7965#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/controller/WordController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="107" selection-start-line="107" selection-end-line="107" />
-              <folding>
-                <element signature="e#1886#1899#0" expanded="true" />
-                <element signature="e#3965#3981#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeecg-boot-base-common/src/main/java/org/jeecg/common/api/vo/Result.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/resources/application-prod.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jeecg-boot-module-system/src/main/java/org/jeecg/modules/system/model/SysRegisterInfoModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -214,7 +160,7 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="154" />
     <option name="y" value="37" />
     <option name="width" value="1036" />
@@ -233,82 +179,6 @@
               <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeecg-boot-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeecg-boot2" type="462c0819:PsiDirectoryNode" />
-              <item name="jeecg-boot-module-system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -324,7 +194,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568088352144" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568089102705" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -493,12 +363,12 @@
       <workItem from="1567085973700" duration="2155000" />
       <workItem from="1567217568958" duration="6099000" />
       <workItem from="1568078016068" duration="40000" />
-      <workItem from="1568078592214" duration="9228000" />
+      <workItem from="1568078592214" duration="9968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185923000" />
+    <option name="totallyTimeSpent" value="186663000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -510,9 +380,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="-11" width="1863" height="1092" extended-state="7" />
+    <frame x="58" y="-11" width="1863" height="1092" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2407305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2407305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -523,7 +393,7 @@
       <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32784185" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.69364756" visible="true" weight="0.40170032" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69364756" weight="0.40170032" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.44633368" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
