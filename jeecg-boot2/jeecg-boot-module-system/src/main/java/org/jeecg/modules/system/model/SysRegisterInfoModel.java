@@ -1,5 +1,6 @@
 package org.jeecg.modules.system.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -9,6 +10,8 @@ import io.swagger.annotations.ApiModelProperty;
  * @Author scott
  * @since  2019-01-18
  */
+
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 @ApiModel(value="注册对象", description="注册对象")
 public class SysRegisterInfoModel {
     @ApiModelProperty(value = "班级")

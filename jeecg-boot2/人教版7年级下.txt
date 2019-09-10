@@ -1,0 +1,509 @@
+guitar|n. 吉他
+sing|v. 唱歌
+swim|v. & n. 游泳
+dance|v. 跳舞 n. 舞蹈
+draw|v. 画
+chess|n. 国际象棋
+play chess|下国际象棋
+speak|v. 说（某种语言）；说话
+join|v. 参加；加入
+club|n. 俱乐部；社团
+be good at|擅长于……
+tell|v. 讲述；告诉
+story|n. 故事；小说
+write|v. 写作；写字
+show|n. 演出；节目 v. 给……看；展示
+or|conj. 或者；也不（用于否定句）
+talk|v. & n. 说话；交谈
+talk to|跟……说话
+kung fu|n. （中国）功夫
+drum|n. 鼓
+play the drum|敲鼓
+piano|n. 钢琴
+play the piano|弹钢琴
+violin|n. 小提琴
+also|adv. 也； 而且
+people|n. 人；人们
+home|n. 家；活动本部 adv. 到家；在家
+make|v. 使成为；制造
+make friends|结交朋友
+today|adv. 在今天
+center|n.（=centre）中央；中心
+weekend|n. 周末
+on the weekend|（在）周末
+teach|v. 教；讲授
+musician|n. 音乐家
+play the violin|拉小提琴
+be good with|善于应付……的；对……有办法
+help someone with something|在某方面帮助（某人）
+up|adv. 向上
+get up|起床；站起
+dress|v. 穿衣服 n. 连衣裙
+get dressed|穿上衣服
+brush|v. 刷；刷净 n. 刷子
+tooth|n. （pl. teeth）牙齿
+shower|n. & v. 淋浴 n. 淋浴器（间）
+take a shower|洗淋浴
+usually|adv. 通常地；一般地
+forty|num. 四十
+wow|interj.（表示惊奇或敬佩）哇；呀
+never|adv. 从不,绝不
+early|adv.&adj. 早（的）
+fifty|num. 五十
+job|n. 工作；职业
+work|v. & n. 工作
+station|n. 电（视）台；车站
+Radio Station|广播电台
+o'clock|adv. （表示整点）……点钟
+night|n. 晚上；夜晚
+funny|adj. 奇怪的；滑稽好笑的
+exercise|v. & n. 锻炼；练习
+on weekends|（在）周末
+best|adj. 最好的 adv. 最；最好地
+group|n. 组；群
+half|n. & pron. 一半；半数
+past|prep. 晚于；过（时间） adj. 过去的
+quarter|n. 一刻钟；四分之一
+homework|n. 家庭作业
+run|v. 跑；奔
+clean|v. 打扫；弄干净 adj. 干净的
+walk|n. & v. 行走；步行
+take a walk|散步；走一走
+quickly|adv. 很快地
+either|conj. 或者 adv. 也（用在否定词组后）
+either or|要么……要么……；或者……或者……·
+lot|pron. 大量；许多
+lots of|大量；许多
+sometimes|adv. 有时
+taste|v. 有……的味道；品尝 n. 味道；滋味
+life|n. （pl. lives）生活；生命
+do homework|做作业
+get to|到达
+train|n. 火车
+bus|n. 公共汽车
+subway|n. 地铁
+ride|v. 骑 n. 旅程
+bike|n. 自行车
+sixty|num. 六十
+seventy|num. 七十
+eighty|num. 八十
+ninety|num. 九十
+hundred|num. 一百
+minute|n. 分钟
+far|adv.&adj. 远；远的
+kilometer|n. 千米；公里
+new|adj. 新的；刚出现的
+every|adj. 每一；每个
+every day|每天
+by|prep. （表示方式）乘（交通工具）
+by bike|骑自行车
+drive|v. 开车
+car|n. 小汽车；轿车
+live|v. 居住；生活
+stop|n. 车站；停止
+think of|认为；想起
+cross|v. 横过；越过
+river|n. 河；江
+many|adj. & pron. 许多
+village|n. 村庄；村镇
+between|prep. 介于……之间
+bridge|n. 桥
+boat|n. 小船
+ropeway|n.索道
+year|n.年；岁
+afraid|adj. 害怕；畏惧
+like|prep. 像；怎么样
+villager|n. 村民
+leave|v. 离开；留下
+dream|n. 梦想；睡梦 v. 做梦
+true|adj. 真的；符合事实的
+come true|实现；成为现实
+take the subway|乘地铁
+ride a bike|骑自行车
+rule|n. 规则；规章
+arrive|v. 到达
+be on time|准时
+hallway|n. 走廊；过道
+hall|n. 大厅, 礼堂
+dining hall|餐厅
+listen|v. 听，倾听
+listen to|听······
+fight|v. & n. 打架；战斗
+sorry|adj. 抱歉的；难过的；惋惜的
+outside|adv. 在外面 adj. 外面的
+wear|v. 穿；戴
+important|adj. 重要的
+bring|v. 带来；取来
+have to|必须, 不得不
+uniform|n. 校服；制服
+quiet|adj. 安静的
+out|adv. 外出
+go out|外出（娱乐）
+practice|v. & n. 练习
+dish|n. 碟；盘
+do the dishes|清洗餐具
+before|prep. & conj. 在…以前 adv. 以前
+make one's bed|铺床
+dirty|adj. 脏的
+kitchen|n. 厨房
+more|adj. & pron. 更多（的）
+noisy|adj. 吵闹的
+relax|v. 放松；休息
+read|v. 读；阅读
+terrible|adj. 非常讨厌的；可怕的
+feel|v. 感受；觉得
+strict|adj. 严格的；严厉的
+remember|v. 记住；记起
+follow|v. 遵循； 跟随
+luck|n. 幸运；运气
+keep|v. 保持； 保留
+hair|n. 头发；毛发
+learn|v. 学习；学会
+New York|纽约
+be strict with|（对某人）要求严格
+follow the rules|遵守规则
+panda|n. 熊猫
+zoo|n. 动物园
+tiger|n. 老虎
+elephant|n. 大象
+koala|n. 树袋熊；考拉
+lion|n. 狮子
+giraffe|n. 长颈鹿
+animal|n. 动物
+cute|adj. 可爱的；机灵的
+lazy|adj. 懒散的；懒惰的
+smart|adj. 聪明的
+beautiful|adj. 美丽的；美好的
+scary|adj. 吓人的；恐怖的
+kind|n. 种类
+kind of|稍微；有点儿
+Australia|n. 澳大利亚
+south|adj. 南方的 n. 南,南方
+Africa|n. 非洲
+South Africa|南非
+pet|n. 宠物
+leg|n. 腿
+cat|n. 猫
+sleep|v. & n. 睡觉
+friendly|adj. 友好的
+shy|adj. 羞怯的；腼腆的
+save|v. 救；救助
+symbol|n. 象征
+flag|n. 旗；旗帜
+forget|v. 忘记；遗忘
+get lost|迷路
+place|n. 地点；位置
+water|n. 水
+danger|n. 危险
+cut|v. 砍；切
+down|adv. （坐、躺、倒）下 prep. 向下；沿着
+cut down|砍倒
+tree|n. 树
+kill|v. 杀死；弄死
+ivory|n. 象牙
+over|prep. 超过；多于；在……上方
+Thailand|n.泰国
+Thai|adj. & n. 泰国人（的），泰语（的）
+in danger|处于（极大）危险之中
+be made of|由......制成的
+newspaper|n. 报纸
+use|v. 使用；运用
+soup|n. 汤
+wash|v. 洗
+movie|n. 电影
+just|adv. 只是；恰好
+eat out|出去吃饭
+house|n. 房子
+drink|v. 喝 n. 饮料
+tea|n. 茶；茶叶
+tomorrow|adv. 在明天 n. 明天；未来
+pool|n. 游泳池；水池
+shop|v. 购物 n. 商店
+supermarket|n. 超市
+man|n. 男人；人
+race|n. 竞赛
+host|n. 主人；东道主
+study|v. & n. 学习；研究
+state|n. 州
+the United States|美国，美利坚合众国
+American|adj. 美国的；美洲的 n. 美国人；美洲人
+dragon|n. 龙
+Dragon Boat Festival|端午节
+any|adj. 任何的；任一的 pron. 任何；任一
+other|adj. 另外的；其他的 pron. 另外的人（或物）
+young|adj. 幼小的；年轻的
+child|n. 儿童 (pl.children)
+miss|v. 怀念；想念；错过
+wish|v. 希望
+delicious|adj. 可口的；美味的
+still|adv. 还；仍然
+living room|客厅
+go to the movies|去电影院
+rain|v. 下雨 n. 雨水
+windy|adj. 多风的
+cloudy|adj. 多云的
+sunny|adj. 晴朗的
+snow|v. 下雪 n. 雪
+weather|n. 天气
+cook|v. 做饭
+bad|adj. 坏的；糟的
+park|n. 公园
+message|n. 信息；消息
+take a message|捎个口信；传话
+him|pron. 他（he的宾格）
+could|modal v. 能；可以
+back|adv. 回来；回原处
+problem|n. 困难；难题
+right now|此刻；马上
+again|adv. 再一次；又一次
+dry|adj. 干燥的
+cold|adj. 寒冷的；冷的
+hot|adj. 热的
+warm|adj. 温暖的
+visit|v. 拜访；参观
+Canada|n. 加拿大
+summer|n. 夏天；夏季
+sit|v. 坐
+juice|n. 果汁；饮料
+soon|adv. 不久, 很快
+vacation|n. 假期
+hard|adv. 努力地 adj. 困难的
+Europe|n. 欧洲
+mountain|n. 高山
+country|n. 国；国家
+skate|v. 滑冰
+snowy|adj. 下雪的
+winter|n. 冬天；冬季
+Russian|adj. 俄罗斯的 n. 俄罗斯人； 俄语
+snowman|n. 雪人
+rainy|adj. 阴雨的；多雨的
+Moscow|莫斯科
+Toronto|多伦多
+Boston|波士顿
+call someone back|（给某人）回电话
+on vacation|度假
+post|n. 邮政
+office|n. 办公室
+post office|邮局
+police|n. 警察
+police office|警察局
+hotel|n. 旅馆；酒店
+restaurant|n. 餐馆
+bank|n. 银行
+hospital|n. 医院
+street|n. 大街
+pay|v. & n. 付费
+pay phone|付费电话
+near|prep. 在……附近
+across|adv. & prep. 过；穿过
+across from|在 ... 对面
+front|n. 前面
+in front of|在...前面
+behind|prep. 在...的后面
+town|n. 镇；市镇
+around|prep. 在……周围 adv. 在周围；大约
+north|n. 北；北方 adj. 北方的
+along|prep. 沿着
+turn|v. 转向；翻
+right|adv. 向右边 n. 右边
+left|adv. 向左边 n. 左边
+crossing|n. 十字路口
+neighborhood|n. 街区；街坊
+spend|v. 花（时间、钱等）
+monkey|n. 猴子
+climb|v. 爬
+road|n. 路
+often|adv. 时常；常常
+air|n. 空气
+sunshine|n. 阳光
+free|adj. 免费的
+enjoy|v. 享受；喜爱
+easily|adj. 容易地
+money|n. 钱
+go along|沿着（这条街）走
+turn left|向左转
+turn right|向右转
+enjoy doing something|乐于做 ..., 喜欢做 ...
+curly|adj. 卷曲的
+straight|adj. 直的
+tall|adj. 高的
+medium|adj. 中等的
+height|n. 身高；高度
+thin|adj. 瘦的
+heavy|adj. 重的
+tonight|adv. & n. （在）今晚；（在）今夜
+little|adj. 小的
+a little|一点；少量
+may|modal v. 也许；可能；可以
+cinema|n. 电影院
+later|adv. 以后
+handsome|adj. 英俊的
+actor|n. 演员
+actress|n. 女演员
+person|n. 人
+nose|n. 鼻子
+blonde|adj. (blond) （头发）金黄色的
+mouth|n. 嘴
+round|adj. 圆形的
+face|n. 脸
+eye|n. 眼睛
+singer|n. 歌手
+artist|n. 艺术家
+crime|n. 犯罪活动
+criminal|n. 罪犯
+put|v. 放
+each|adj. & pron. 每个；各自
+way|n. 方式；路线
+describe|v. 描述
+differently|adv. 不同地
+another|adj. & pron. 另一；又一
+end|n. 结尾；尽头
+in the end|最后
+real|adj. 真正的；真实的
+jeans|n. 牛仔裤
+medium height|中等身高
+glass|n. 其复数形式为glasses，表示眼镜
+noodle|n.（常用复数形式）面条
+mutton|n. 羊肉
+beef|n. 牛肉
+cabbage|n. 卷心菜,洋白菜
+potato|n. 土豆；马铃薯
+special|n. 特色菜；特价品 adj. 特别的,特殊的
+would|modal v.（表示意愿）愿意
+would like|（表示意愿）愿意；喜欢
+yet|adv.（常用于否定句或疑问句） 还,仍然
+large|adj. 大号的；大的
+order|n. & v. 点菜；命令
+size|n. 大小；尺码
+bowl|n. 碗
+tofu|n. 豆腐
+meat|n.（可食用的）肉
+dumpling|n. 饺子
+porridge|n. 粥；面糊
+onion|n. 洋葱
+fish|n. 鱼；鱼肉
+pancake|n. 烙饼；薄饼
+world|n. 世界
+around the world|世界各地
+answer|n. 答案 v. 回答
+different|adj. 不同的
+cake|n. 蛋糕
+candle|n. 蜡烛
+age|n. 年龄
+make a wish|许愿
+blow|n. 吹
+blow out|吹灭
+if|conj. 如果
+will|v. 将要；会
+the UK|(=the United Kingdom) n. 英国
+candy|n. 糖果
+lucky|adj. 幸运的
+popular|adj. 受欢迎的；普遍的
+cut up|切碎
+idea|n. 想法；主意
+take one's order|点菜
+a bowl of|一碗
+bring good luck to someone|给...带来好运
+milk|v. 挤奶
+cow|n. 奶牛
+horse|n. 马
+feed|v. (fed) 喂养；饲养
+farmer|n. 农民；农场主
+quite|adv. 相当；完全
+anything|pron.任何东西；任何事物
+grow|v. 种植；生长；发育
+farm|n. 农场 v. 务农；种田
+pick|v. 采；摘
+excellent|adj. 极好的,优秀的
+countryside|n. 乡村；农村
+yesterday|adv. 昨天
+flower|n. 花
+worry|v. & n. 担心；担忧
+luckily|adv. 幸运地；好运地
+sun|n. 太阳
+museum|n. 博物馆
+fire|n. 火；火灾
+fire station|消防站
+painting|n. 油画；绘画
+exciting|adj. 使人兴奋的；令人激动的
+lovely|adj. 可爱的
+expensive|adj. 昂贵的
+cheap|adj. 廉价的；便宜的
+slow|adj. 缓慢的；迟缓的
+fast|adv. & adj. 快地（的）
+robot|n. 机器人
+guide|n. 导游；向导
+gift|n. 礼物；赠品
+all in all|总的说来
+everything|pron. 所有事物；一切
+interested|adj. 感兴趣的
+be interested in|对…感兴趣
+dark|adj.黑暗的；昏暗的
+hear|v.（heard）听到；听见
+a lot|许多
+in the countryside|在乡下；在农村
+camp|v. 扎营；搭帐篷
+lake|n. 湖；湖泊
+beach|n. 海滩；沙滩
+badminton|n. 羽毛球运动
+sheep|n. 羊, 绵羊
+as|prep. 作为；当作
+natural|adj. 自然的
+butterfly|n. 蝴蝶
+visitor|n. 游客；访问者
+tired|adj. 疲倦的；疲劳的
+stay|v. 停留；待
+stay up late|深夜不睡；熬夜
+away|adv. 离开；远离
+run away|跑开
+mouse|n.(pi. mice) 老鼠；耗子
+baby|adj. 幼小的 n. 婴儿
+shout|v. 呼叫；喊叫
+shout at|冲…大声叫嚷
+woof|interj.（狗叫声）汪汪
+language|n. 语言
+fly|v.(flew) 飞
+kite|n. 风筝
+fly a kite|放风筝
+high|adj. & adv. 高的（地）
+high school|中学
+ago|adv. 以前
+India|n. 印度
+tent|n. 帐篷
+put up|搭起；举起
+moon|n. 月亮
+each other|互相；彼此
+surprise|n. 惊奇；惊讶 v. 使吃惊
+snake|n. 蛇
+scared|adj. 惊慌的；吓坏了的
+move|v. 移动
+start|v. 开始；着手
+jump|v. 跳；跃
+up and down|上上下下，起伏
+wake|v. 弄醒；醒
+wake up|把……弄醒
+into|prep. 到……里面；进入
+forest|n. 森林
+ear|n. 耳朵
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

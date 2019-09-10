@@ -223,9 +223,16 @@ public class LoginController {
 	@ApiOperation("完善资料接口")
 	public Result<JSONObject> registerInfo(@RequestBody SysRegisterInfoModel registerModel){
 		Result<JSONObject> result = new Result<JSONObject>();
-		String classId = registerModel.getClassId();
-		String avatar = registerModel.getAvatar();
-		int sex = registerModel.getSex();
+		String classId = null;
+		String avatar = null;
+		if(registerModel.getClassId() != null && !registerModel.getClassId().isEmpty()){
+			classId = registerModel.getClassId();
+		}
+		if(registerModel.getAvatar() != null && !registerModel.getAvatar().isEmpty()){
+			avatar = registerModel.getClassId();
+		}
+		int sex = 0 ;
+		sex	= registerModel.getSex();
 		SysUser sysUser;
 		try {
 			sysUser=new SysUser();

@@ -1,3 +1,9 @@
+POST http://localhost:8084/jeecg-boot/api/upload
+
+<> 2019-09-10T095212.200.json
+
+###
+
 GET http://localhost:8080/jeecg-boot/{POST%20/api/classify}
 
 ###

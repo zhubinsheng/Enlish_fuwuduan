@@ -52,6 +52,9 @@ public class WordController {
        }else{
            System.out.println("从redis缓存取数据");
            pageList=(IPage<Word>)redisUtil.get("WordCache::selectWordPage"+pageNo+pageSize+classify);
+           if (pageList.getRecords().size()==0){
+               pageList =wordService.selectWordPage(pageNo,pageSize, classify);
+           }
 
        }
         result.setSuccess(true);
@@ -80,7 +83,8 @@ public class WordController {
      */
     @RequestMapping(value="/upload",method = RequestMethod.POST)
     @ApiOperation("上传单词库")
-    public void uploadFileTest(@RequestParam("uploadFile") MultipartFile file) throws Exception{
+    public Result<String> uploadFileTest(@RequestParam("uploadFile") MultipartFile file) throws Exception{
+        Result<String> stringResult = new Result<>();
 
         File toFile = null;
         if(file.equals("")||file.getSize()<=0){
@@ -94,7 +98,8 @@ public class WordController {
         }
 
 
-        int write = 0;
+        int line = 0;
+        StringBuilder resultString = new StringBuilder();
         StringBuilder result = new StringBuilder();
         String classify = file.getOriginalFilename().substring(0,file.getOriginalFilename().indexOf("."));
         try{
@@ -104,23 +109,59 @@ public class WordController {
             BufferedReader br = new BufferedReader(isr);
             String s = null;
             while((s = br.readLine())!=null){
+                line++;
+
                 if (s.endsWith("丨")){
+                    resultString.append("<----------->").append(String.valueOf(line));
                     s = s + "空字符串";
+                }else if (s==null||s.isEmpty()||s.equals("")){
+                    resultString.append("<----------->").append(String.valueOf(line));
+                    continue;
+                }else if(!s.contains("丨")){
+                    resultString.append("<----------->").append(String.valueOf(line));
+                    continue;
                 }
                 String[] content = s.split("丨");
 
                 if (content != null && content.length == 2) {
                     System.out.println(content[0]);
                     System.out.println(content[1]);
-                    map.put(content[0],content[1]);
+                    //map.put(content[0],content[1]);
+
+
+                    if (content[0]==null||content[0].equals("")){
+                        resultString.append("<----------->").append(String.valueOf(line));
+                        content[0] = "空字符串";
+                    }
+                    if (content[1]==null){
+                        resultString.append("<----------->").append(String.valueOf(line));
+                        content[1] = "空字符串";
+                    }
+                    wordService.InsertWordPage(content[0],content[1], classify);
+
+                }else if (content != null && content.length > 2){
+                    resultString.append("<----------->").append(String.valueOf(line));
+                    wordService.InsertWordPage(content[0],content[1], classify);
+                }else{
+                    int in = content[0].indexOf("|");
+                    int last = s.length();
+                    content[0] = s.substring(0,in);
+                    String s2 = s.substring(in+1,last);
+
+                    System.out.println(content[0]);
+                    System.out.println(s2);
+
+                    if (content[0]==null||content[0].equals("")){
+                        resultString.append("<----------->").append(String.valueOf(line));
+                        content[0] = "空字符串";
+                    }
+                    if (s2.isEmpty()){
+                        resultString.append("<----------->").append(String.valueOf(line));
+                        s2 = "空字符串";
+                    }
+                    wordService.InsertWordPage(content[0],s2, classify);
                 }
-                if (content[0]==null||content[0].equals("")){
-                    content[0] = "空字符串";
-                }
-                if (content[1]==null){
-                    content[1] = "空字符串";
-                }
-                wordService.InsertWordPage(content[0],content[1], classify);
+
 
 
                 //write+= Test.JDBCAdd.Insert(content[0],content[1]);
@@ -130,6 +171,8 @@ public class WordController {
         }catch(Exception e){
             e.printStackTrace();
         }
+        stringResult.setResult(String.valueOf(resultString));
+        return stringResult;
     }
 
 

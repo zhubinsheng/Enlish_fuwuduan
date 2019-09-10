@@ -1,0 +1,7 @@
+{
+  "success": false,
+  "message": "Current request is not a multipart request",
+  "code": 500,
+  "result": null,
+  "timestamp": 1568080332400
+}
