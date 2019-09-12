@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Set;
 
 public interface IWordService extends IService<Word> {
-    public IPage<Word> selectWordPage(Integer pageNo,Integer pageSize,String classify);
+    public List<Word> selectWordPage(Integer pageNo,Integer pageSize,String classify);
     public Set<String> selectClassify();
     public void InsertWordPage(String word, String meaning, String classify);
 }

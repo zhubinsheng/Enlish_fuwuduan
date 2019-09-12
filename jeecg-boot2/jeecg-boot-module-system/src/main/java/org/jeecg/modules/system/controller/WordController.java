@@ -20,6 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -37,28 +38,28 @@ public class WordController {
     private RedisUtil redisUtil;
     @RequestMapping(value="/word",method = RequestMethod.POST)
     @ApiOperation("获取单词列表")
-    public Result<IPage<Word>> queryPageList(Word word,
+    public Result<List<Word>> queryPageList(Word word,
                                              @RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
                                              @RequestParam(name="pageSize", defaultValue="30") Integer pageSize,
                                              @RequestParam(name="classify",defaultValue = "gmat2500")String classify,
                                              HttpServletRequest req){
-        Result<IPage<Word>> result = new Result<IPage<Word>>();
-       IPage<Word>pageList=null;
+        Result<List<Word>> result = new Result<List<Word>>();
+        List<Word>pageList=null;
         Page<Word> page = new Page<Word>(pageNo, pageSize);
-       if(!redisUtil.hasKey("WordCache::selectWordPage"+pageNo+pageSize+classify)) {
+       if(!redisUtil.hasKey("WordCache::selectWordPage"+classify)) {
 
 
            pageList =wordService.selectWordPage(pageNo,pageSize, classify);
        }else{
            System.out.println("从redis缓存取数据");
-           pageList=(IPage<Word>)redisUtil.get("WordCache::selectWordPage"+pageNo+pageSize+classify);
-           if (pageList.getRecords().size()==0){
+           pageList=(List<Word>)redisUtil.get("WordCache::selectWordPage"+classify);
+           if (pageList.size()==0){
                pageList =wordService.selectWordPage(pageNo,pageSize, classify);
            }
 
        }
         result.setSuccess(true);
-        result.setResult((IPage<Word>) pageList);
+        result.setResult((List<Word>) pageList);
         return result;
     }
     @RequestMapping(value="/classify",method = RequestMethod.POST)

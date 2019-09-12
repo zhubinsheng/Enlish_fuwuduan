@@ -25,11 +25,11 @@ public class WordServiceImpl extends ServiceImpl<WordMapper, Word> implements IW
     @Autowired
     @Lazy
     private RedisUtil redisUtil;
-    public IPage<Word> selectWordPage(Integer pageNo,Integer pageSize, String classify){
+    public List<Word> selectWordPage(Integer pageNo,Integer pageSize, String classify){
         Page<Word> page=new Page<Word>(pageNo,pageSize);
 
-        IPage<Word>result=wordMapper.selectPage(page,classify);
-        redisUtil.set("WordCache::selectWordPage"+pageNo+pageSize+classify,result);
+        List<Word>result=wordMapper.selectPage(classify);
+        redisUtil.set("WordCache::selectWordPage"+classify,result);
         return result;
     }
     public Set<String> selectClassify(){
