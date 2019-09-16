@@ -229,13 +229,14 @@ public class LoginController {
 			classId = registerModel.getClassId();
 		}
 		if(registerModel.getAvatar() != null && !registerModel.getAvatar().isEmpty()){
-			avatar = registerModel.getClassId();
+			avatar = registerModel.getAvatar();
 		}
 		int sex = 0 ;
 		sex	= registerModel.getSex();
 		SysUser sysUser;
 		try {
 			sysUser=new SysUser();
+			sysUser.setId(registerModel.getId());
 			sysUser.setClass_id(classId);
 
 			//http://px32gts87.bkt.clouddn.com/FoT8zK_VViVINVMnK3KDF85Hxegt

@@ -46,4 +46,15 @@ public class SysRegisterInfoModel {
     @ApiModelProperty(value = "性别（1：男 2：女）")
     private int sex;
 
+    /**user id*/
+    @ApiModelProperty(value = "id")
+    private String id;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }
