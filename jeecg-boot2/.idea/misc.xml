@@ -13,6 +13,13 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1021083173">
+      <usages-collector id="statistics.spring.boot.mvc.usages">
+        <counts>
+          <entry key="RestClientRequestRunnerNavigator.fromCode" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/jeecg-boot-module-system" />

@@ -1,5 +1,8 @@
 package org.jeecg;
 
+import net.sourceforge.tess4j.Tesseract;
+import net.sourceforge.tess4j.TesseractException;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,11 +16,27 @@ import java.util.Map;
 public class Test {
     private static int write;
 
+
     public static void main(String args[]) {
+        Tesseract tesseract = new Tesseract();
+        tesseract.setLanguage("chi_sim");
+        tesseract.setDatapath("D:\\Eliao\\Enlish_fuwuduan\\tessdata");
+        try {
+            String str = tesseract.doOCR(new File("D:\\Eliao\\Enlish_fuwuduan\\12.png"));
+            System.out.println(str);
+        } catch (TesseractException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+
+   /* public static void main(String args[]) {
         File file = new File("D:\\english\\闪记词库\\高中词汇\\北师大高中必修1.txt");
         txt2String(file);
 
-       /* String str = new String("Welcome|to|Runoob|123");
+       *//* String str = new String("Welcome|to|Runoob|123");
 
         System.out.println("- 分隔符返回值 :" );
         for (String retval: str.split("\\|")){
@@ -42,8 +61,8 @@ public class Test {
         System.out.println("多个分隔符返回值 :" );
         for (String retval: str3.split("and|or")){
             System.out.println(retval);
-        }*/
-    }
+        }*//*
+    }*/
     public static String txt2String(File file){
         StringBuilder result = new StringBuilder();
         try{

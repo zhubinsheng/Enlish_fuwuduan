@@ -1,5 +1,7 @@
 package org.jeecg.modules.system.controller;
 
+import java.io.File;
+import java.io.InputStream;
 import java.util.*;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -7,6 +9,9 @@ import java.net.URLDecoder;
 import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import net.sourceforge.tess4j.Tesseract;
+import net.sourceforge.tess4j.TesseractException;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.aspect.annotation.AutoLog;
@@ -35,7 +40,9 @@ import com.alibaba.fastjson.JSON;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
- /**
+import static org.jeecg.modules.system.controller.WordController.inputStreamToFile;
+
+/**
  * @Description: 学习情况记录表
  * @Author: jeecg-boot
  * @Date:   2019-08-29
@@ -305,7 +312,56 @@ public class LearningSitController {
               }
           }
       }
-      return Result.ok("文件导入失败！");
+
+
+
+
+	  return Result.ok("文件导入失败！");
   }
 
+
+	 @AutoLog(value = "图片识别")
+	 @ApiOperation(value="片识别", notes="片识别")
+	 @PostMapping(value = "/doOCR")
+	 public Result<String> doOCR(@RequestParam("uploadFile") MultipartFile file) {
+		 Result<String> result = new Result<String>();
+
+		 File toFile = null;
+		 if(file.equals("")||file.getSize()<=0){
+			 file = null;
+		 }else {
+			 InputStream ins = null;
+			 try {
+				 ins = file.getInputStream();
+			 } catch (IOException e) {
+				 e.printStackTrace();
+				 result.setCode(11);
+				 return result;
+			 }
+			 toFile = new File(file.getOriginalFilename());
+			 inputStreamToFile(ins, toFile);
+			 try {
+				 ins.close();
+			 } catch (IOException e) {
+				 e.printStackTrace();
+				 result.setCode(22);
+				 return result;
+			 }
+		 }
+
+		 Tesseract tesseract = new Tesseract();
+		 tesseract.setLanguage("chi_sim");
+		 result.setCode(33);
+		 tesseract.setDatapath("/www/server/tomcat8/webapps");
+		 try {
+			 String str = tesseract.doOCR(toFile);
+			 //System.out.println(str);
+			 result.setResult(str);
+			 result.setCode(200);
+			 result.setSuccess(true);
+		 } catch (TesseractException e) {
+			 e.printStackTrace();
+		 }
+		 return result;
+	 }
 }
